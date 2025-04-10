@@ -84,6 +84,9 @@ Foi feita a segmentação dos abastecimentos filtrados em faixas de valor:
 
 ---
 
+A análise do ticket médio revelou diferenças importantes no perfil de consumo entre os postos da rede. O posto com CNPJ 45949344000180 apresentou o maior ticket médio em 2024, com R$124,91 por abastecimento. Esse valor, consideravelmente superior à média dos demais, pode estar relacionado à localização estratégica do posto, atendimento a veículos maiores, ou até mesmo à fidelização de clientes com alto consumo. Na sequência, os postos 3618954000150 (R$115,05) e 47290002000126 (R$103,79) também demonstraram desempenhos notáveis. Vale destacar que o posto 47290002000126, que já havia se sobressaído em volume total de vendas, figura entre os três com maior ticket médio, reforçando a hipótese de que esse ponto específico tenha exercido um papel central durante a campanha de premiação promovida pela rede.
+
+
 ## 📌 Conclusões
 
 - A campanha da rede parece ter sido eficaz para **engajar clientes comuns**, mantendo um bom volume de abastecimentos acima de R$100.
