@@ -26,9 +26,9 @@ abastecimentos_df_100.to_csv("abastecimentos_df_100.csv", index=False)
 
 # Por meses
 df_result = pd.read_csv('abastecimentos_df_100.csv')
-
+print(df_result.head())
 # Por dia da semana
-#print(df_result.groupby('dia').size().sort_values(ascending=False))
+#rint(df_result.groupby('dia').size().sort_values(ascending=False))
 
 df_result.groupby('mes').size()
 acumulado = df_result.groupby('mes').size()
@@ -38,19 +38,26 @@ print(acumulado)
 
 
 #PARA GERAR um gráfico 
-#sns.scatterplot(
-#    data=acumulado,
-#    x='total_abastecimentos',
-#   y='mes'
-#)
-#plt.title("Abastecimentos acima de R$100 por Mês")
-#plt.tight_layout()
-#plt.savefig("grafico_abastecimentos_por_mes.png")  # salvar como imagem
+plt.figure(figsize=(8,4))
+sns.scatterplot(
+    data=acumulado,
+    x='total_abastecimentos',
+   y='mes'
+)
+plt.title("Abastecimentos acima de R$100 por Mês")
+plt.tight_layout()
+plt.savefig("grafico_abastecimentos_por_mes.png")  # salvar como imagem
 
 plt.figure(figsize=(8,4))
-sns.countplot(data=acumulado, x='mes', hue='mes', palette='Greens') 
+sns.countplot(
+    data=acumulado, 
+    x='mes', 
+    hue='mes', 
+    palette='Greens'
+) 
 plt.title('Abastecimentos acima de R$100 por Mês')
 plt.ylabel('Quantidade')
 plt.xlabel('Mês')
 plt.tight_layout()
 plt.savefig("grafico_abastecimentos_por_mesQT.png")  # salvar como imagem
+
